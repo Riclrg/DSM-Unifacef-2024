@@ -15,8 +15,6 @@ const Loginpage = ({ navigation }) => { // Componente funcional LoginPage recebe
       <Image source={require("../../assets/arrow-icon.png")} style={fn_styles.arrow} /> {/* Ícone de seta */}
       <Text style={fn_styles.language}> Português (Brasil)</Text> {/* Texto de idioma */}
       <Image source={require("../../assets/logoInsta.png")} style={fn_styles.logoinsta} /> {/* Logo do Instagram */}
-      <TextInput style={fn_styles.input} placeholder="Nome de usuário, email ou número" /> {/* Campo de entrada para nome de usuário, email ou número */}
-      <TextInput style={fn_styles.input} placeholder="Senha" /> {/* Campo de entrada para senha */}
       <Pressable style={fn_styles.buttonEnter} onPress={() => navigation.navigate("Home")}>
         <Text style={fn_styles.buttonEnterText}>Entrar</Text> {/* Botão de entrar */}
       </Pressable>
@@ -24,7 +22,8 @@ const Loginpage = ({ navigation }) => { // Componente funcional LoginPage recebe
       <Pressable style={fn_styles.buttonCreateAccount} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={fn_styles.buttonCreateAccountText}>Criar nova conta</Text> {/* Botão para criar nova conta */}
       </Pressable>
-      <Image source={require("../../assets/logoMeta.png")} style={fn_styles.logoMeta} /> {/* Logo da Meta */}
+        <Text style={fn_styles.passwordAlert}>Ricardo de Lima Rosa Gomes</Text> {/*Nome completo substituindo a logo da Meta*/}
+        {/*<Image source={require("../../assets/logoMeta.png")} style={fn_styles.logoMeta} /> {/* Logo da Meta */}
     </View>
   );
 }
