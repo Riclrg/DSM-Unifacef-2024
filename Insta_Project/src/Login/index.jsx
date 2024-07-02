@@ -1,6 +1,6 @@
-import React from "react"; // Importa a biblioteca React
-import { Pressable, Text, View, StyleSheet, TextInput, Image } from "react-native"; // Importa os componentes Pressable, Text, View, StyleSheet, TextInput e Image da biblioteca react-native
-import { LinearGradient } from "expo-linear-gradient"; // Importa o componente LinearGradient da biblioteca expo-linear-gradient
+import React from "react"
+import { Pressable, Text, View, StyleSheet, TextInput, Image } from "react-native"
+import { LinearGradient } from "expo-linear-gradient"
 
 const Loginpage = ({ navigation }) => { // Componente funcional LoginPage recebendo a prop navigation
   return (
@@ -14,7 +14,7 @@ const Loginpage = ({ navigation }) => { // Componente funcional LoginPage recebe
       />
       <Image source={require("../../assets/arrow-icon.png")} style={fn_styles.arrow} /> {/* Ícone de seta */}
       <Text style={fn_styles.language}> Português (Brasil)</Text> {/* Texto de idioma */}
-      <Image source={require("../../assets/logoInsta.png")} style={fn_styles.logoinsta} /> {/* Logo do Instagram */}
+      <Image source={require("../../assets/Nikelogo.png")} style={fn_styles.logoinsta} /> {/* Logo do Instagram */}
       <Pressable style={fn_styles.buttonEnter} onPress={() => navigation.navigate("Home")}>
         <Text style={fn_styles.buttonEnterText}>Entrar</Text> {/* Botão de entrar */}
       </Pressable>
@@ -33,13 +33,13 @@ const fn_styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    width: "100%",
+    width: "100%"
   },
   gradient: {
     position: "absolute",
     left: 0,
     right: 0,
-    height: "100%",
+    height: "100%"
   },
   arrow: {
     objectFit: "contain",
@@ -47,7 +47,7 @@ const fn_styles = StyleSheet.create({
     height: 35,
     position: "absolute",
     left: 20,
-    top: 60,
+    top: 60
   },
   language: {
     fontSize: 16,
@@ -60,7 +60,7 @@ const fn_styles = StyleSheet.create({
     width: 90,
     height: 90,
     objectFit: "contain",
-    marginBottom: 90,
+    marginBottom: 90
   },
   input: {
     backgroundColor: "#F0F0F0",
@@ -71,7 +71,7 @@ const fn_styles = StyleSheet.create({
     fontSize: 20,
     border: "solid",
     borderColor: "#DCE1EB",
-    borderWidth: 1.5,
+    borderWidth: 1.5
   },
   buttonEnter: {
     backgroundColor: '#2E82EA',
@@ -79,15 +79,15 @@ const fn_styles = StyleSheet.create({
     margin: 10,
     width: "80%",
     borderRadius: 30,
-    marginBottom: 15,
+    marginBottom: 15
   },
   buttonEnterText: {
     color: '#fff',
     fontSize: 20,
-    textAlign: "center",
+    textAlign: "center"
   },
   passwordAlert: {
-    fontSize: 18,
+    fontSize: 18
   },
   buttonCreateAccount: {
     padding: 15,
@@ -96,17 +96,17 @@ const fn_styles = StyleSheet.create({
     marginTop: 150,
     border: "solid",
     borderColor: "#2E82EA",
-    borderWidth: 1.5,
+    borderWidth: 1.5
   },
   buttonCreateAccountText: {
     color: '#2E82EA',
     fontSize: 20,
-    textAlign: "center",
+    textAlign: "center"
   },
   logoMeta: {
     width: 120,
     height: 40,
-    objectFit: "contain",
+    objectFit: "contain"
   }
 });
 

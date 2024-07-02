@@ -1,6 +1,6 @@
-import { LinearGradient } from "expo-linear-gradient"; // Importa o componente LinearGradient da biblioteca expo-linear-gradient
-import React from "react"; // Importa a biblioteca React
-import { Text, View, StyleSheet, Image } from "react-native"; // Importa os componentes Text, View, StyleSheet e Image da biblioteca react-native
+import { LinearGradient } from "expo-linear-gradient"
+import React from "react"
+import { Text, View, StyleSheet, Image } from "react-native"
 
 const HomePage = ({ }) => {
   return (
